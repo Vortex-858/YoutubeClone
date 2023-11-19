@@ -20,6 +20,7 @@ function VideoGrid(props){
     return (
         <div class="thumbnail">
             <div class="video">
+            {/* <a href='/video'><img src={kalank} /></a> */}
             <Link to={`/video?id=${myVideo.id}`}><img class="thumbnail-home" src={myVideo.thumbnail.url} /></Link>
             </div>
             <div class="video-title">
@@ -29,11 +30,11 @@ function VideoGrid(props){
                 </div>
                 <div class="video-info">
                     <h4 class="track-title margin-0">
-                       
+                        {/* Kalank Title Track - Lyrical | Alia Bhatt */}
                         {myVideo.title}
                     </h4>
                     <p class="margin-0 smaller-fontsize">
-                       
+                        {/* T-Series */}
                         {myVideo.channelName}
                     </p>
                     <p class="margin-0 smaller-fontsize">
@@ -45,7 +46,8 @@ function VideoGrid(props){
 }
 
 function Home(){
-    
+    // let videos = [1, 2, 3, 4, 5 , 6, 7, 8, 9, 10, 11, 12]
+
     return (
         <div>
             <Header />
@@ -92,6 +94,7 @@ function Home(){
                     })}
                 </div>
             </div>
+
         </div>
     )
 }

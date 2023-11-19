@@ -39,11 +39,11 @@ function Header() {
                     </div>
                 </div>
                 <div class="header-items header-center">
-                   
+                    {/* <div class="header-search"></div> */}
                     <input class="header-search" placeholder='Search..'/>
                     <button class="search-button">
                         <BsSearch style={{fontSize: '18px'}}/>
-                       
+                        {/* <img class="small-image" src={searchIcon}></img> */}
                     </button>
                     <div class="header-mic">
                         <BiSolidMicrophone class="microphone" />

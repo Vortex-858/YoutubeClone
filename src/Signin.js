@@ -35,6 +35,7 @@ function Signin() {
             localStorage.setItem('email', emailId);
             alert('User valid')
             console.log(window.location)
+            // alert('wait')
             window.location.replace('http://localhost:3000')
         }else{
             alert('Credentials Invalid!!!')

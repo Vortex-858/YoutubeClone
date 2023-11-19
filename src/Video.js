@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 function VideoInfo(props){
   const video = props.video;
- 
+  // localStorage.removeItem(`like_${video.id}`)
   const [likes, setLikes] = useState(
     JSON.parse(localStorage.getItem(`like_${video.id}`)) ? 
     JSON.parse(localStorage.getItem(`like_${video.id}`)) : []
@@ -68,7 +68,7 @@ function VideoInfo(props){
   console.log(likes)
   return (<>
     <h5 class="video-title">
-     
+      {/* Kalank Title Track - Lyrical | Alia Bhatt , Varun Dhawan | Arijit Singh | Pritam| Amitabh */}
       {video.title}
     </h5>
     <div class="video-details">
@@ -141,7 +141,7 @@ function SuggestedVideos(props){
 }
 
 function Video() {
-  
+  // let videos = [1, 2, 3, 4, 5, 6, 7, 8]
   const [currVideoId, setCurrentVideoId] = useState("");
   const [currVideo, setCurrVideo] = useState({});
 
@@ -169,7 +169,8 @@ function Video() {
 
   return (
     <div>
-  
+      {/* <p>Video comp</p>
+      <h4>Time Left : {seconds}</h4> */}
       <Header />
       <div className='video-main-page'>
         <div className='video-frame'>
